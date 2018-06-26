@@ -85,8 +85,7 @@ export default class WorkerImage extends Component {
   }
 
   // render
-  renderImage(src) {
-    const {className, width, height, style} = this.props;
+  renderImage(src, {className, width, height, style}) {
     const extra = {className, width, height, style};
 
     return (
@@ -94,8 +93,7 @@ export default class WorkerImage extends Component {
     );
   }
 
-  renderBackgroundImage(src) {
-    const {className, style, children} = this.props;
+  renderBackgroundImage(src, {className, style, children}) {
     const extra = {className, style: {
       ...(style || {}),
       backgroundImage: `url('${src}')`,
@@ -117,6 +115,6 @@ export default class WorkerImage extends Component {
       return null;
     }
 
-    return render(src || placeholder);
+    return render(src || placeholder, this.props);
   }
 }
