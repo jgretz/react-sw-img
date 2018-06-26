@@ -67,8 +67,12 @@ export default class WorkerImage extends Component {
     const {src, onLoad} = this.props;
 
     this.setState({src});
+
     if (onLoad) {
-      onLoad();
+      // allow the browser to catch up
+      setImmediate(() => {
+        onLoad();
+      });
     }
   }
 
