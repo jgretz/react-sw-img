@@ -1,6 +1,6 @@
 {
   "name": "react-sw-img",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a dependency free react component optimizing image loading via service workers",
   "main": "lib/index.js",
   "scripts": {
