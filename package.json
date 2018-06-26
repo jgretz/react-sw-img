@@ -1,0 +1,43 @@
+{
+  "name": "react-sw-img",
+  "version": "0.0.1",
+  "description": "a dependency free react component optimizing image loading via service workers",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node",
+    "compile": "node tools/build.js",
+    "prepublishOnly": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgretz/react-sw-img.git"
+  },
+  "author": "Josh Gretz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgretz/react-sw-img/issues"
+  },
+  "homepage": "https://github.com/jgretz/react-sw-img#readme",
+  "keywords": [
+    "react image",
+    "react image service worker",
+    "react service worker",
+    "react-sw-img"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^4.0.0",
+    "eslint-plugin-import": "^2.3.0",
+    "nodemon": "^1.9.2",
+    "react": "^16.4.1",
+    "shelljs": "^0.8.2"
+  }
+}
